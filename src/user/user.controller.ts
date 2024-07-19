@@ -78,7 +78,7 @@ export class UserController {
         }
     }))
     uploadAvatar(@Req() req:any, @UploadedFile() file: Express.Multer.File){
-    
+        console.log("filesize", req.headers['content-length'])
         if(req.fileValidationError){
             throw new BadRequestException(req.fileValidationError)
         }

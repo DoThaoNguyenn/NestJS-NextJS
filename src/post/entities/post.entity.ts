@@ -2,7 +2,7 @@ import { User } from "src/user/entities/user.entity";
 import { Column, CreateDateColumn, Entity, ManyToOne, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
 
 @Entity()
-export class Post{
+export class PostEntity{
     @PrimaryGeneratedColumn()
     id: number;
      
